@@ -147,7 +147,6 @@ Menu
 }
 .title {
   text-align: center;
-  margin-bottom: 2rem;
 }
 .underline {
   width: 5rem;
@@ -155,6 +154,7 @@ Menu
   background: var(--clr-gold);
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 2rem;
 }
 .btn-container {
   margin-bottom: 4rem;
