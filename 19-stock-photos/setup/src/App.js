@@ -8,9 +8,9 @@ const mainUrl = `https://api.unsplash.com/photos/`
 const searchUrl = `https://api.unsplash.com/search/photos/`
 
 function App() {
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(false)
   const [photos, setPhotos] = useState([])
-  const [page, setPage] = useState(1)
+  const [page, setPage] = useState(0)
   const [query, setQuery] = useState('')
 
   const fetchImages = async () => {
@@ -63,7 +63,6 @@ function App() {
   const handleSubmit = (e) => {
     e.preventDefault()
     setPage(1)
-    fetchImages()
   }
   return <main>
     <section className="search">
